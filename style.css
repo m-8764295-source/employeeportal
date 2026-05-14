@@ -2115,26 +2115,23 @@
     right: 0;
     display: none;
     justify-content: center;
-    padding: 0 16px 20px;
-    pointer-events: none;
+    padding: 0;
     background: transparent;
     z-index: 5000;
   }
 
   .bnav-pill {
-    pointer-events: all;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    max-width: 420px;
-    background: rgba(255,255,255,0.82);
-    backdrop-filter: blur(24px) saturate(1.8);
-    -webkit-backdrop-filter: blur(24px) saturate(1.8);
-    border-radius: 28px;
-    padding: 10px 8px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06), inset 0 0.5px 0 rgba(255,255,255,0.9);
-    border: 0.5px solid rgba(255,255,255,0.6);
+    max-width: 480px;
+    background: #fff;
+    border-radius: 0;
+    padding: 8px 4px 20px;
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
+    border-top: 0.5px solid rgba(0,0,0,0.07);
+    position: relative;
   }
 
   .bnav-item {
@@ -2164,45 +2161,45 @@
   }
 
   .bnav-icon {
-    color: #b0aaa5;
-    transition: color 0.2s ease, transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    color: #c0bbb6;
+    transition: color 0.2s ease, transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
   }
 
   .bnav-item .bnav-label {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.01em;
-    color: #b0aaa5;
+    color: #c0bbb6;
     transition: color 0.2s ease;
     line-height: 1;
   }
 
-  .bnav-item.bnav-active .bnav-icon { color: #F5A623; transform: translateY(-1px) scale(1.08); }
+  .bnav-item.bnav-active .bnav-icon { color: #F5A623; transform: scale(1.1); }
   .bnav-item.bnav-active .bnav-label { color: #F5A623; }
-  .bnav-item.bnav-active .bnav-icon-wrap { background: rgba(245,166,35,0.1); }
 
   .bnav-post {
     flex: 0 0 auto;
     padding: 0;
-    margin: 0 4px;
+    margin: 0 8px;
+    position: relative;
+    top: -14px;
   }
 
   .bnav-post-btn {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #FFD166 0%, #F5A623 50%, #F07B20 100%);
+    background: linear-gradient(145deg, #FFD166 0%, #F5A623 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 16px rgba(245,166,35,0.45), 0 2px 6px rgba(245,166,35,0.3);
+    box-shadow: 0 4px 14px rgba(245,166,35,0.5);
     transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
-    margin-bottom: 14px;
   }
 
   .bnav-post:active .bnav-post-btn {
     transform: scale(0.88);
-    box-shadow: 0 2px 8px rgba(245,166,35,0.3);
+    box-shadow: 0 2px 6px rgba(245,166,35,0.3);
   }
 
 
