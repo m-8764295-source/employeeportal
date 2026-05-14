@@ -221,6 +221,18 @@
         <!-- Section label -->
         <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;">🏪 Open Now</div>
 
+        <!-- Category Buttons -->
+        <div style="display:flex;gap:12px;margin:18px 0 4px;padding:0 2px;">
+          <div onclick="filterCategory('food')" id="cat-food" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#FFFBF0;border:1.5px solid #FFE9A0;border-radius:18px;cursor:pointer;box-shadow:0 2px 8px rgba(245,166,35,0.10);transition:transform 0.15s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.15s ease;-webkit-tap-highlight-color:transparent;" ontouchstart="" onmousedown="this.style.transform='scale(0.94)'" onmouseup="this.style.transform='scale(1)'" onmouseleave="this.style.transform='scale(1)'">
+            <span style="font-size:28px;line-height:1;">🍔</span>
+            <span style="font-size:12px;font-weight:700;color:#B97A00;letter-spacing:0.01em;">Food</span>
+          </div>
+          <div onclick="filterCategory('notes')" id="cat-notes" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#F7F5FF;border:1.5px solid #DDD8FF;border-radius:18px;cursor:pointer;box-shadow:0 2px 8px rgba(120,100,220,0.08);transition:transform 0.15s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.15s ease;-webkit-tap-highlight-color:transparent;" ontouchstart="" onmousedown="this.style.transform='scale(0.94)'" onmouseup="this.style.transform='scale(1)'" onmouseleave="this.style.transform='scale(1)'">
+            <span style="font-size:28px;line-height:1;">📚</span>
+            <span style="font-size:12px;font-weight:700;color:#5B47C5;letter-spacing:0.01em;">Notes</span>
+          </div>
+        </div>
+
         <!-- Merchant Card: Oya -->
         <div data-merchant-card data-merchant-keywords="oya soy soya oden snack drink campus" onclick="oyaCardClick()" style="background:var(--white);border:1px solid var(--beige);border-radius:20px;overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow-sm);cursor:pointer;transition:transform 0.15s,box-shadow 0.15s;active:transform:scale(0.98);">
           <!-- Banner -->
@@ -2005,6 +2017,16 @@
   //  BOTTOM NAV BAR
   // ═══════════════════════════════════════════
   const NAV_SCREENS = ['menu', 'menu-mad', 'orders', 'profile', 'landing'];
+
+  function filterCategory(cat) {
+    if (cat === 'notes') {
+      alert('📚 Notes marketplace coming soon!');
+      return;
+    }
+    // food — scroll to merchant section
+    document.getElementById('cat-food')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  window.filterCategory = filterCategory;
 
   function updateBottomNav() {
     const nav = document.getElementById('bottom-nav');
