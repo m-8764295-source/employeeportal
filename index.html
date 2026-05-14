@@ -219,17 +219,21 @@
       <div style="flex:1;overflow-y:auto;padding:0 20px 40px;scrollbar-width:none;background:#ffffff;">
 
         <!-- Section label -->
-        <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;">🏪 Open Now</div>
+        <div style="font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:12px;">🔥 Popular Food</div>
 
-        <!-- Category Buttons -->
-        <div style="display:flex;gap:12px;margin:18px 0 4px;padding:0 2px;">
-          <div onclick="filterCategory('food')" id="cat-food" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#FFFBF0;border:1.5px solid #FFE9A0;border-radius:18px;cursor:pointer;box-shadow:0 2px 8px rgba(245,166,35,0.10);transition:transform 0.15s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.15s ease;-webkit-tap-highlight-color:transparent;" ontouchstart="" onmousedown="this.style.transform='scale(0.94)'" onmouseup="this.style.transform='scale(1)'" onmouseleave="this.style.transform='scale(1)'">
-            <span style="font-size:28px;line-height:1;">🍔</span>
-            <span style="font-size:12px;font-weight:700;color:#B97A00;letter-spacing:0.01em;">Food</span>
+        <!-- Category Icons Row -->
+        <div style="display:flex;gap:0;margin:14px 0 16px;">
+          <div onclick="filterCategory('food')" id="cat-food" style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:0 14px;cursor:pointer;-webkit-tap-highlight-color:transparent;flex-shrink:0;" onmousedown="this.style.transform='scale(0.88)'" onmouseup="this.style.transform='scale(1)'" ontouchstart="" onmouseleave="this.style.transform='scale(1)'">
+            <div style="width:52px;height:52px;background:#FFF8E7;border-radius:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(245,166,35,0.13);border:1px solid #FFE9A0;">
+              <span style="font-size:24px;line-height:1;">🍔</span>
+            </div>
+            <span style="font-size:11px;font-weight:600;color:#7a6a55;">Food</span>
           </div>
-          <div onclick="filterCategory('notes')" id="cat-notes" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#F7F5FF;border:1.5px solid #DDD8FF;border-radius:18px;cursor:pointer;box-shadow:0 2px 8px rgba(120,100,220,0.08);transition:transform 0.15s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.15s ease;-webkit-tap-highlight-color:transparent;" ontouchstart="" onmousedown="this.style.transform='scale(0.94)'" onmouseup="this.style.transform='scale(1)'" onmouseleave="this.style.transform='scale(1)'">
-            <span style="font-size:28px;line-height:1;">📚</span>
-            <span style="font-size:12px;font-weight:700;color:#5B47C5;letter-spacing:0.01em;">Notes</span>
+          <div onclick="filterCategory('notes')" id="cat-notes" style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:0 14px;cursor:pointer;-webkit-tap-highlight-color:transparent;flex-shrink:0;" onmousedown="this.style.transform='scale(0.88)'" onmouseup="this.style.transform='scale(1)'" ontouchstart="" onmouseleave="this.style.transform='scale(1)'">
+            <div style="width:52px;height:52px;background:#F0EEFF;border-radius:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(120,100,220,0.10);border:1px solid #DDD8FF;">
+              <span style="font-size:24px;line-height:1;">📚</span>
+            </div>
+            <span style="font-size:11px;font-weight:600;color:#7a6a55;">Notes</span>
           </div>
         </div>
 
@@ -304,7 +308,7 @@
         </div>
 
         <!-- Mad Drink Lab Card -->
-        <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin:20px 0 12px;">🧪 Also Available</div>
+        
         <div data-merchant-card data-merchant-keywords="mad drink lab fruit juice nachos shake milkshake" style="background:var(--white);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--beige);cursor:default;">
           <div style="position:relative;">
             <img src="assets/mad.png" style="width:100%;height:auto;display:block;filter:brightness(0.55);">
