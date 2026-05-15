@@ -131,22 +131,11 @@
       <h1 class="login-title">Welcome to MIDI</h1>
       <p class="login-sub">MMU Melaka Campus Delivery</p>
 
-      <!-- Tab: Login / Sign Up -->
-      <div style="display:flex;background:rgba(255,255,255,0.1);border-radius:12px;padding:4px;width:100%;max-width:320px;margin-bottom:20px;animation:fadeUp 0.6s ease 0.25s both;">
-        <button id="tab-login" onclick="switchAuthTab('login')" style="flex:1;padding:10px;border:none;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;background:#fff;color:#1B3FA0;transition:all 0.2s;">Login</button>
-        <button id="tab-signup" onclick="switchAuthTab('signup')" style="flex:1;padding:10px;border:none;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;background:transparent;color:rgba(255,255,255,0.6);transition:all 0.2s;">Sign Up</button>
-      </div>
-
       <!-- Form -->
       <div style="width:100%;max-width:320px;display:flex;flex-direction:column;gap:12px;animation:fadeUp 0.6s ease 0.3s both;">
 
-        <!-- Name field (sign up only) -->
-        <div id="name-field" style="display:none;">
-          <input id="auth-name" type="text" placeholder="Full Name" autocomplete="name"
-            style="width:100%;padding:14px 16px;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;background:rgba(255,255,255,0.15);color:#fff;backdrop-filter:blur(10px);">
-        </div>
-
-        <input id="auth-email" type="text" placeholder="Username" autocomplete="username"
+        <!-- Name field -->
+        <input id="auth-name" type="text" placeholder="Full Name" autocomplete="name"
           style="width:100%;padding:14px 16px;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;background:rgba(255,255,255,0.15);color:#fff;backdrop-filter:blur(10px);">
 
         <input id="auth-password" type="password" placeholder="Password" autocomplete="current-password"
