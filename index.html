@@ -23,22 +23,6 @@
             <span>no</span><span class="brand-mark">v</span><span>a</span>
           </a>
 
-          <button class="location-pill" type="button" aria-label="Change delivery location">
-            <span class="icon-circle location-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 22s7-6.15 7-13A7 7 0 0 0 5 9c0 6.85 7 13 7 13Z" />
-                <circle cx="12" cy="9" r="2.3" />
-              </svg>
-            </span>
-            <span>
-              <small>Deliver to</small>
-              <strong>Main Campus</strong>
-            </span>
-            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </button>
-
           <button class="bell-button" type="button" aria-label="Notifications">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 8a6 6 0 0 0-12 0c0 7-3 6-3 8h18c0-2-3-1-3-8Z" />
@@ -70,7 +54,7 @@
 
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <h1 id="hero-title">Good food,<br />fast delivery,<br /><span>low price.</span></h1>
+            <h1 id="hero-title">Good food,<br />faster delivery,<br /><span>better prices.</span></h1>
             <p>Your campus, delivered.</p>
             <button class="primary-button" type="button" onclick="scrollToRestaurants()">
               Order now
@@ -82,70 +66,97 @@
           </div>
           <div class="hero-art" aria-hidden="true">
             <img src="assets/food.png" alt="" />
-            <span class="price-badge">From<br /><strong>RM3.90</strong></span>
           </div>
-          <div class="hero-dots" aria-hidden="true">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-          </div>
-        </section>
-
-        <section class="service-grid" aria-label="Order options">
-          <button class="service-card" type="button">
-            <span class="service-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 16h2l2-5h8l2 5h2" />
-                <path d="M7 16a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                <path d="M17 16a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                <path d="M9 11V7h5l2 4" />
-              </svg>
-            </span>
-            <span class="service-copy">
-              <strong>Delivery</strong>
-              <small>We deliver to you</small>
-            </span>
-            <span class="round-next" aria-hidden="true">&rsaquo;</span>
-            <span class="service-meta">
-              <span>15-25 min</span>
-              <span>From RM3.90</span>
-            </span>
-          </button>
-
-          <button class="service-card" type="button">
-            <span class="service-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 8h10l1 12H6L7 8Z" />
-                <path d="M9 8a3 3 0 0 1 6 0" />
-              </svg>
-            </span>
-            <span class="service-copy">
-              <strong>Pick Up</strong>
-              <small>Pick up at store</small>
-            </span>
-            <span class="round-next" aria-hidden="true">&rsaquo;</span>
-            <span class="service-meta">
-              <span>5-10 min</span>
-              <span>Save more</span>
-            </span>
-          </button>
         </section>
 
         <section class="category-strip" aria-label="Food categories" id="category-strip"></section>
 
         <section class="restaurants" id="restaurants" aria-labelledby="restaurants-title">
           <div class="section-heading">
-            <h2 id="restaurants-title">All restaurants</h2>
-            <button type="button" aria-label="Change restaurant sort">
-              <span>Sort by</span>
-              <strong>Recommended</strong>
+            <h2 id="restaurants-title">Popular near you</h2>
+            <button type="button" aria-label="See all popular restaurants">
+              <strong>See all</strong>
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m6 9 6 6 6-6" />
+                <path d="m9 18 6-6-6-6" />
               </svg>
             </button>
           </div>
           <div class="restaurant-list" id="restaurant-list"></div>
         </section>
+      </section>
+
+      <section id="merchant-screen" class="screen merchant-screen" data-screen="merchant" aria-label="Mori Cafe Bukit Beruang">
+        <div class="merchant-hero">
+          <img src="assets/morifood.png" alt="" />
+          <header class="merchant-topbar" aria-label="Mori Cafe controls">
+            <span class="merchant-time">11:41</span>
+            <div class="status-icons merchant-status" aria-hidden="true">
+              <span class="signal"></span>
+              <span class="wifi"></span>
+              <span class="battery"></span>
+            </div>
+            <button class="merchant-icon-button merchant-back" type="button" aria-label="Back to home" onclick="showScreen('landing')">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="merchant-icon-button merchant-search" type="button" aria-label="Search Mori Cafe menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.8-3.8" />
+              </svg>
+            </button>
+            <button class="merchant-icon-button merchant-more" type="button" aria-label="More Mori Cafe options">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="5" cy="12" r="1.4" />
+                <circle cx="12" cy="12" r="1.4" />
+                <circle cx="19" cy="12" r="1.4" />
+              </svg>
+            </button>
+          </header>
+        </div>
+
+        <section class="merchant-summary" aria-labelledby="merchant-title">
+          <img class="merchant-logo" src="assets/mori.png" alt="Mori Cafe logo" />
+          <div class="merchant-details">
+            <h1 id="merchant-title">Mori Cafe Bukit Beruang</h1>
+            <p><span class="rating-pill">&#9733; 4.8</span> <span>&bull;</span> 30-40 min <span>&bull;</span> 1.8 km</p>
+            <p>Cafe <span>&bull;</span> Western <span>&bull;</span> Asian <span>&bull;</span> Drinks</p>
+            <span class="delivery-chip">Free delivery over RM20</span>
+          </div>
+        </section>
+
+        <section class="merchant-promo" aria-label="Mori Cafe promotion">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 14v-4l11-5v14L4 14Z" />
+            <path d="M4 10H2v4h2" />
+            <path d="M18 9a4 4 0 0 1 0 6" />
+          </svg>
+          <span>10% OFF your first order!</span>
+          <span aria-hidden="true">&rsaquo;</span>
+        </section>
+
+        <nav class="merchant-tabs" aria-label="Mori Cafe menu categories" id="merchant-tabs"></nav>
+
+        <section class="merchant-menu" aria-labelledby="merchant-menu-title">
+          <h2 id="merchant-menu-title">Recommend</h2>
+          <div id="merchant-menu-list" class="merchant-menu-list"></div>
+        </section>
+
+        <footer class="merchant-cart-bar" aria-label="Mori Cafe cart">
+          <div class="cart-count">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 8h12l-1 12H7L6 8Z" />
+              <path d="M9 8a3 3 0 0 1 6 0" />
+            </svg>
+            <span id="cart-count">0</span>
+          </div>
+          <div class="cart-total">
+            <strong id="cart-total">RM0.00</strong>
+            <span>Add items to get started</span>
+          </div>
+          <button type="button" class="view-cart-button" disabled>View Cart</button>
+        </footer>
       </section>
 
       <section id="orders-screen" class="screen" data-screen="orders" aria-label="Orders">
