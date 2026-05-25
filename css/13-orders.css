@@ -1,0 +1,84 @@
+  /* ===== ORDER HISTORY ===== */
+  #orders-scroll::-webkit-scrollbar { display: none; }
+
+  .order-hist-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--beige);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 12px;
+    overflow: hidden;
+    animation: fadeUp 0.35s ease both;
+  }
+
+  .order-hist-header {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .order-hist-icon {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    background: var(--matcha-pale);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+
+  .order-hist-info { flex: 1; min-width: 0; }
+  .order-hist-code { font-size: 13px; font-weight: 700; color: var(--text-dark); }
+  .order-hist-meta { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+  .order-hist-status {
+    font-size: 11px; font-weight: 700;
+    padding: 4px 10px; border-radius: 100px;
+    flex-shrink: 0;
+  }
+  .status-new      { background:#EDF4E6; color:var(--matcha); }
+  .status-preparing{ background:#FFF8EE; color:var(--milo); }
+  .status-ready    { background:#EDF4E6; color:var(--matcha); }
+  .status-delivering{ background:#EAF0F7; color:var(--bpea); }
+  .status-done     { background:var(--cream2); color:var(--text-muted); }
+
+  .order-hist-body {
+    border-top: 1px solid var(--beige);
+    padding: 14px 16px;
+    display: none;
+  }
+  .order-hist-body.open { display: block; }
+
+  .order-hist-items { margin-bottom: 10px; }
+  .order-hist-item {
+    font-size: 13px; color: var(--text-mid);
+    padding: 3px 0;
+    display: flex; justify-content: space-between;
+  }
+
+  .order-hist-total {
+    font-size: 13px; font-weight: 700;
+    color: var(--text-dark);
+    display: flex; justify-content: space-between;
+    padding-top: 8px;
+    border-top: 1px solid var(--beige);
+    margin-bottom: 12px;
+  }
+
+  .order-hist-steps { margin-top: 4px; }
+
+  .orders-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+  .orders-empty-icon { font-size: 48px; margin-bottom: 12px; }
+  .orders-empty-title { font-size: 16px; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+  .orders-empty-sub { font-size: 13px; }
+
+  .orders-loading {
+    text-align: center; padding: 60px 20px;
+    color: var(--text-muted); font-size: 14px;
+  }
+
+  /* ===== PROFILE SCREEN ===== */

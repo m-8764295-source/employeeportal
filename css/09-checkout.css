@@ -1,0 +1,84 @@
+  /* ===== SCREEN 5: CHECKOUT ===== */
+  #screen-checkout { background: var(--cream); }
+
+  .checkout-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 24px 100px;
+    scrollbar-width: none;
+  }
+  .checkout-scroll::-webkit-scrollbar { display: none; }
+
+  .order-type-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    border: 1px solid var(--beige);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .order-type-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: var(--matcha-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .order-type-text .small { font-size: 11px; color: var(--text-muted); }
+  .order-type-text .big { font-size: 15px; font-weight: 600; color: var(--text-dark); }
+
+  .field-group { margin-bottom: 12px; }
+
+  .field-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .field-input {
+    width: 100%;
+    background: var(--white);
+    border: 1.5px solid var(--beige);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.2s;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .field-input:focus { border-color: var(--matcha); }
+  .field-input::placeholder { color: var(--text-muted); }
+
+  .section-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    border: 1px solid rgba(232,221,208,0.5);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 12px;
+  }
+
+  .section-card-title {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+

@@ -1,0 +1,31 @@
+  /* ===== COMMON HEADER ===== */
+  .app-header {
+    padding: 52px 24px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--cream);
+  }
+
+  .back-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: var(--white);
+    border: 1px solid var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s;
+  }
+  .back-btn:active { background: var(--beige); }
+
+  .header-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-dark);
+    flex: 1;
+  }
+

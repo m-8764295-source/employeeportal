@@ -1,0 +1,85 @@
+  /* ===== ORDER TYPE MODAL ===== */  /* ===== ORDER TYPE MODAL ===== */
+  .order-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(44,36,32,0.55);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: fadeIn 0.2s ease;
+  }
+  .order-modal-sheet {
+    background: var(--white);
+    border-radius: 24px 24px 0 0;
+    padding: 24px 24px 40px;
+    width: 100%;
+    animation: slideUp 0.3s ease;
+  }
+  .order-modal-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+  }
+  .order-modal-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .order-modal-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--beige);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.15s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .order-modal-btn:active { transform: scale(0.98); }
+  .order-modal-btn.selected {
+    border-color: var(--matcha);
+    background: var(--matcha-pale);
+  }
+  .order-modal-btn .ombi {
+    width: 44px; height: 44px;
+    border-radius: 14px;
+    background: var(--cream2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+  .order-modal-btn.selected .ombi { background: rgba(122,158,90,0.15); }
+  .order-modal-btn .ombt { text-align: left; }
+  .order-modal-btn .ombt-title { font-size: 15px; font-weight: 700; color: var(--text-dark); }
+  .order-modal-btn .ombt-sub   { font-size: 12px; color: var(--text-muted); }
+  .order-modal-confirm {
+    width: 100%;
+    background: var(--matcha);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 700;
+    cursor: pointer;
+    margin-top: 6px;
+    box-shadow: 0 6px 20px rgba(122,158,90,0.3);
+    transition: transform 0.15s;
+  }
+  .order-modal-confirm:active { transform: scale(0.98); }
+  .cancel-link {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 14px;
+    cursor: pointer;
+    display: block;
+  }
+
